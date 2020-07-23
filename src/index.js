@@ -16,10 +16,12 @@ import slider from './modules/slider';
 import toggleMenu from './modules/toggleMenu';
 import togglePopUp from './modules/togglePopUp';
 import toggleDropDownMenu from './modules/toggleDropDownMenu';
+import toggleVisitMenu from './modules/toggleVisitMenu';
 
-
-//dropDownMenu
+//drop down menu
 toggleDropDownMenu();
+//free vivit form window
+toggleVisitMenu()
 //Menu
 toggleMenu();
 // popUp
@@ -36,7 +38,7 @@ sendForm('form2');
 sendForm('form3');
 
 //possible modules:
-//visitMenu
+//visitFormMenu
 //callMenu
 //giftMenu
 //gallerySlider
