@@ -15,7 +15,11 @@ import sendForm from './modules/sendForm';
 import slider from './modules/slider';
 import toggleMenu from './modules/toggleMenu';
 import togglePopUp from './modules/togglePopUp';
+import toggleDropDownMenu from './modules/toggleDropDownMenu';
 
+
+//dropDownMenu
+toggleDropDownMenu();
 //Menu
 toggleMenu();
 // popUp
@@ -32,7 +36,6 @@ sendForm('form2');
 sendForm('form3');
 
 //possible modules:
-//dropDownMenu
 //visitMenu
 //callMenu
 //giftMenu

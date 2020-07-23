@@ -690,8 +690,13 @@ header .head .club-select .clubs-list button {
     background: url(../images/list-arrow.png) no-repeat 30px center;
     cursor: pointer
 }
+
+.hidden {
+    visibility: hidden;
+}
+
 header .head .club-select .clubs-list ul {
-    display: none;
+    display: block;
     width: 180px;
     position: absolute;
     top: 60px;
