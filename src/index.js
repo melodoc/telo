@@ -16,12 +16,9 @@ import promoSlider from './modules/promoSlider';
 import toggleMenu from './modules/toggleMenu';
 import togglePopUp from './modules/togglePopUp';
 import toggleDropDownMenu from './modules/toggleDropDownMenu';
-import toggleVisitMenu from './modules/toggleVisitMenu';
 
 //drop down menu
 toggleDropDownMenu();
-//free vivit form window
-toggleVisitMenu()
 //Menu
 toggleMenu();
 // popUp
