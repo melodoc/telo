@@ -12,7 +12,7 @@ elementClosest(window);
 import calc from './modules/calc';
 import checkDigitsInput from './modules/checkDigitsInput';
 import sendForm from './modules/sendForm';
-import slider from './modules/slider';
+import promoSlider from './modules/promoSlider';
 import toggleMenu from './modules/toggleMenu';
 import togglePopUp from './modules/togglePopUp';
 import toggleDropDownMenu from './modules/toggleDropDownMenu';
@@ -26,8 +26,8 @@ toggleVisitMenu()
 toggleMenu();
 // popUp
 togglePopUp();
-//Slider
-slider();
+//Slider on the top
+promoSlider();
 // Only digits input allowed
 checkDigitsInput();
 //Calc
