@@ -16,6 +16,8 @@ import promoSlider from './modules/promoSlider';
 import toggleMenu from './modules/toggleMenu';
 import togglePopUp from './modules/togglePopUp';
 import toggleDropDownMenu from './modules/toggleDropDownMenu';
+import showArrow from './modules/showArrow';
+
 
 //drop down menu
 toggleDropDownMenu();
@@ -27,6 +29,8 @@ togglePopUp();
 promoSlider();
 // Only digits input allowed
 checkDigitsInput();
+//show small Arrow after scroll
+showArrow();
 //Calc
 calc();
 //Send-ajax-form
