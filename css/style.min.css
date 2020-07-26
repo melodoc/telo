@@ -959,7 +959,8 @@ nav.popup-menu .close-menu-btn img {
 }
 .main-slider .slide .slide-text {
     position: relative;
-    z-index: 1001
+    z-index: 1001;
+    margin-top: 25px;
 }
 .main-slider .slide .slide-text .offer-head {
     margin-top: 80px;
@@ -1150,8 +1151,25 @@ nav.popup-menu .close-menu-btn img {
 .services-slider {
     display: flex;
     margin: 0 auto;
-    padding-left: 15px;
-    padding-right: 15px
+    padding-left: 0;
+    padding-right: 60px;
+    position: relative;
+}
+#services .wrapper {
+    position: relative;
+    padding-left: 0;
+    padding-right: 0;
+}
+#carousel {
+    position: relative;
+    overflow: hidden;
+}
+.carousel-item {
+    flex: 0 0 20%;
+}
+#services-slider {
+    transition: transform 0.5s ;
+    will-change: transform ;
 }
 .services-slider .slide {
     text-align: center;
@@ -1211,7 +1229,9 @@ nav.popup-menu .close-menu-btn img {
     padding-right: 75px;
     max-width: 900px;
     margin: 0 auto;
-    text-align: center
+    text-align: center;
+    position: relative;
+    height: 400px;
 }
 #gallery .gallery-slider .slide {
     margin: 0 auto !important;
@@ -1771,6 +1791,68 @@ p.personal-data input[type=checkbox]:checked+label:before {
     font-weight: 500;
     margin-top: 30px
 }
+.gallery-btn.prev {
+    left: 0;
+    background-image: url(../images/arrow-left.png);
+    background-position: 45% 50%;
+    background-size: 20%;
+}
+.gallery-btn.next {
+    right: 0;
+    background-image: url(../images/arrow-right.png);
+    background-position: 55% 50%;
+    background-size: 20%;
+}
+.gallery-btn {
+    position: absolute;
+    cursor: pointer;
+    top: 46%;
+    /*z-index: 5;*/
+    width: 35px;
+    height: 35px;
+    background-color: rgb(255, 209, 24);
+    background-repeat: no-repeat;
+    background-size: 10px;
+    border-radius: 50%;
+    transition: background-color .2s;
+}
+.slide-item {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    opacity: 0;
+    transition: opacity .5s;
+}
+.slide-item-active {
+    opacity: 1;
+    transition: opacity .5s;
+}
+.gallery-dots {
+    position: absolute;
+    bottom: 30px;
+    width: 85%;
+    margin: 20px auto 0;
+    display: flex;
+    justify-content: center;
+    z-index: 5;
+}
+.dot {
+    background: #fff;
+    cursor: pointer;
+    height: 4px;
+    width: 24px;
+    margin: 0 3px;
+    border-radius: 15%;
+    display: inline-block;
+    transition: background-color, transform .4s, -webkit-transform .4s;
+}
+.dot-active {
+    background-color: #ffd118;
+    /* 
+    transform: scale(1.2); */
+}
 @media only screen and (max-width:1199px) {
     .services-slider .slider-arrow.prev {
         left: 25px
@@ -1929,9 +2011,9 @@ p.personal-data input[type=checkbox]:checked+label:before {
         padding-left: 10px;
         padding-right: 10px
     }
-    #gallery .gallery-slider .slider-arrow.next, #gallery .gallery-slider .slider-arrow.prev {
+    /* #gallery .gallery-slider .slider-arrow.next, #gallery .gallery-slider .slider-arrow.prev {
         display: none !important
-    }
+    } */
     #gallery .gallery-slider .slider-dots {
         background-color: rgba(79, 25, 52, .5);
         padding-top: 12px;
@@ -2089,4 +2171,7 @@ p.personal-data input[type=checkbox]:checked+label:before {
     .slider-dots {
         bottom: 30px
     }
+}
+.prev-carousel, .next-carousel {
+    top: 38%;
 }
