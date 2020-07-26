@@ -31,15 +31,17 @@ const toggleMenu = () => {
     const callForm = document.getElementById('callback_form');
     const giftForm = document.getElementById('gift');
 
-    const giftButton = document.querySelector('.fixed-gift');
-
     toggle(rightMenuWrapper, '.free-visit', visitForm);
     toggle(rightMenuWrapper, '.call button', callForm);
-    toggle(document, '.fixed-gift', giftForm);
 
-    giftButton.addEventListener('click', () => {
-        giftButton.style.display = 'none';
-    });
+
+    const giftButton = document.querySelector('.fixed-gift');
+    if (giftButton !== null) {
+        toggle(document, '.fixed-gift', giftForm);
+        giftButton.addEventListener('click', () => {
+            giftButton.style.display = 'none';
+        });
+    }
 };
 
 export default toggleMenu;
