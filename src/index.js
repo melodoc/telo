@@ -13,6 +13,7 @@ import calc from './modules/calc';
 import checkDigitsInput from './modules/checkDigitsInput';
 import sendForm from './modules/sendForm';
 import promoSlider from './modules/promoSlider';
+//import carousel from './modules/carousel';
 import toggleMenu from './modules/toggleMenu';
 import togglePopUp from './modules/togglePopUp';
 import toggleDropDownMenu from './modules/toggleDropDownMenu';
@@ -27,6 +28,8 @@ toggleMenu();
 togglePopUp();
 //Slider on the top
 promoSlider();
+//Slider of services
+//carousel();
 // Only digits input allowed
 checkDigitsInput();
 //show small Arrow after scroll
