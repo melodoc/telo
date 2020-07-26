@@ -12,20 +12,19 @@ elementClosest(window);
 import calc from './modules/calc';
 import checkDigitsInput from './modules/checkDigitsInput';
 import sendForm from './modules/sendForm';
-import slider from './modules/slider';
+import promoSlider from './modules/promoSlider';
 import toggleMenu from './modules/toggleMenu';
 import togglePopUp from './modules/togglePopUp';
 import toggleDropDownMenu from './modules/toggleDropDownMenu';
 
-
-//dropDownMenu
+//drop down menu
 toggleDropDownMenu();
 //Menu
 toggleMenu();
 // popUp
 togglePopUp();
-//Slider
-slider();
+//Slider on the top
+promoSlider();
 // Only digits input allowed
 checkDigitsInput();
 //Calc
@@ -36,7 +35,7 @@ sendForm('form2');
 sendForm('form3');
 
 //possible modules:
-//visitMenu
+//visitFormMenu
 //callMenu
 //giftMenu
 //gallerySlider
