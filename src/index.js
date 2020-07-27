@@ -10,7 +10,6 @@ import elementClosest from 'element-closest';
 elementClosest(window);
 
 import calc from './modules/calc';
-import checkDigitsInput from './modules/checkDigitsInput';
 import sendForm from './modules/sendForm';
 import promoSlider from './modules/promoSlider';
 import carousel from './modules/carousel';
@@ -32,8 +31,6 @@ carousel();
 gallerySlider();
 //Burger menu handler
 burgerMenuHandler();
-//only digits input allowed
-checkDigitsInput();
 //show small Arrow after scroll
 showArrow();
 //calc
@@ -41,4 +38,6 @@ calc();
 //send-ajax-form
 sendForm('form1');
 sendForm('form2');
-sendForm('form3');
+sendForm('banner-form');
+sendForm('footer_form');
+sendForm('card_order');
