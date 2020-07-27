@@ -15,12 +15,15 @@ const burgerMenuHandler = () => {
     });
 
     window.addEventListener('scroll', () => {
-        const topMenu = document.querySelector('.top-menu');
+        const width = document.documentElement.clientWidth;
+        if (width < 768) {
+            const topMenu = document.querySelector('.top-menu');
 
-        if (pageYOffset > 0) {
-            topMenu.style.position = 'fixed';
-        } else {
-            topMenu.style.position = 'relative';
+            if (pageYOffset > 0) {
+                topMenu.style.position = 'fixed';
+            } else {
+                topMenu.style.position = 'relative';
+            }
         }
     });
 };
