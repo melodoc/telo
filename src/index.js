@@ -9,15 +9,15 @@ import 'fetch-polyfill';
 import elementClosest from 'element-closest';
 elementClosest(window);
 
-import calc from './modules/calc';
-import sendForm from './modules/sendForm';
-import promoSlider from './modules/promoSlider';
-import carousel from './modules/carousel';
-import toggleMenu from './modules/toggleMenu';
-import toggleDropDownMenu from './modules/toggleDropDownMenu';
-import showArrow from './modules/showArrow';
-import gallerySlider from './modules/gallerySlider';
 import burgerMenuHandler from './modules/burgerMenuHandler';
+import calc from './modules/calc';
+import carousel from './modules/carousel';
+import gallerySlider from './modules/gallerySlider';
+import promoSlider from './modules/promoSlider';
+import sendForm from './modules/sendForm';
+import showArrow from './modules/showArrow';
+import toggleDropDownMenu from './modules/toggleDropDownMenu';
+import toggleMenu from './modules/toggleMenu';
 
 //drop down menu
 toggleDropDownMenu();
