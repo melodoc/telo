@@ -18,7 +18,7 @@ import toggleMenu from './modules/toggleMenu';
 import toggleDropDownMenu from './modules/toggleDropDownMenu';
 import showArrow from './modules/showArrow';
 import gallerySlider from './modules/gallerySlider';
-
+import burgerMenuHandler from './modules/burgerMenuHandler';
 
 //drop down menu
 toggleDropDownMenu();
@@ -30,6 +30,8 @@ promoSlider();
 carousel();
 //gallerySlider
 gallerySlider();
+//Burger menu handler
+burgerMenuHandler();
 //only digits input allowed
 checkDigitsInput();
 //show small Arrow after scroll
