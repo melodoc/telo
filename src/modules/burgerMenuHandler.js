@@ -14,15 +14,18 @@ const burgerMenuHandler = () => {
         }
     });
 
+
     window.addEventListener('scroll', () => {
         const width = document.documentElement.clientWidth;
-        if (width < 768) {
-            const topMenu = document.querySelector('.top-menu');
+        const topMenu = document.querySelector('.top-menu');
+        const menuHeight = 250;
+        topMenu.style.position = '';
 
-            if (pageYOffset > 0) {
+        if (width < 768) {
+            if (pageYOffset > menuHeight) {
                 topMenu.style.position = 'fixed';
             } else {
-                topMenu.style.position = 'relative';
+                topMenu.style.position = '';
             }
         }
     });
