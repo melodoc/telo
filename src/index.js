@@ -18,7 +18,9 @@ import sendForm from './modules/sendForm';
 import showArrow from './modules/showArrow';
 import toggleDropDownMenu from './modules/toggleDropDownMenu';
 import toggleMenu from './modules/toggleMenu';
+import validation from './modules/validation';
 
+validation();
 //drop down menu
 toggleDropDownMenu();
 //show and close menu 

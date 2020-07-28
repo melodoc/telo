@@ -12,7 +12,6 @@ const promoSlider = () => {
             count = 0;
         }
         slides[count].style.display = 'flex';
-        slides[count].style.transition = 'opacity 0.5';
     }, 4000);
 
 };
