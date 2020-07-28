@@ -32,7 +32,7 @@ const sendForm = selectedForm => {
         const dataProcessing = form.querySelector('.data-processing');
 
         if (dataProcessing === null || dataProcessing.checked) {
-            if (phoneInput.value.length >= 5 && phoneInput.value.length <= 15) {
+            if (phoneInput.value.length >= 15 && phoneInput.value.length <= 20) {
                 event.preventDefault();
                 form.appendChild(statusMessage);
                 if (!statusMessage.textContent) {
