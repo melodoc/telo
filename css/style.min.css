@@ -448,6 +448,9 @@ html#schelkovo .advantages .wrapper {
     html#mozaika .head-slider, html#schelkovo .head-slider {
         height: 340px
     }
+    .slider-dots {
+        bottom: 100px;
+    }
 }
 @media only screen and (max-width:850px) {
     html#mozaika .advantages .wrapper, html#schelkovo .advantages .wrapper {
@@ -496,6 +499,9 @@ html#schelkovo .advantages .wrapper {
     html#mozaika #cards #card_order input[type="radio"]+label, html#schelkovo #cards #card_order input[type="radio"]+label {
         width: 30vw
     }
+    .slider-dots {
+        bottom: 50px;
+    }
 }
 @media only screen and (max-width:479px) {
     html#mozaika .main-slider .slide .slide-text .offer-head .middle, html#schelkovo .main-slider .slide .slide-text .offer-head .middle, html#mozaika .main-slider .slide.type2 .slide-text .offer-head .middle, html#schelkovo .main-slider .slide.type2 .slide-text .offer-head .middle {
@@ -527,6 +533,9 @@ html#schelkovo .advantages .wrapper {
         -webkit-box-pack: center;
         -ms-flex-pack: center;
         justify-content: center
+    }
+    .gallery-dots {
+        bottom: 100px;
     }
 }
 @font-face {
@@ -1831,12 +1840,10 @@ p.personal-data input[type=checkbox]:checked+label:before {
 }
 .gallery-dots {
     position: absolute;
-    bottom: 30px;
-    width: 85%;
-    margin: 20px auto 0;
-    display: flex;
-    justify-content: center;
-    z-index: 5;
+    bottom: 50px;
+    left: 50%;
+    margin-left: -65px;
+    z-index: 1000
 }
 .dot {
     background: #fff;
@@ -2011,11 +2018,11 @@ p.personal-data input[type=checkbox]:checked+label:before {
         padding-left: 10px;
         padding-right: 10px
     }
-    /* #gallery .gallery-slider .slider-arrow.next, #gallery .gallery-slider .slider-arrow.prev {
-        display: none !important
-    } */
+    .gallery-dots {
+        bottom: 70px;
+    }
     #gallery .gallery-slider .slider-dots {
-        background-color: rgba(79, 25, 52, .5);
+        background-color: rgba(228, 190, 209, 0.5);
         padding-top: 12px;
         padding-left: 5px;
         padding-right: 5px
@@ -2066,6 +2073,9 @@ p.personal-data input[type=checkbox]:checked+label:before {
     }
     header .head-main .right .free-visit img {
         margin-right: 15px
+    }
+    .gallery-dots {
+        bottom: 100px;
     }
 }
 @media only screen and (max-width:479px) {
@@ -2150,6 +2160,9 @@ p.personal-data input[type=checkbox]:checked+label:before {
     }
     .popup .form-content input[type="text"], .popup .form-content input[type="tel"] {
         width: 80vw
+    }
+    .gallery-dots {
+        bottom: 100px;
     }
 }
 @media only screen and (max-width:390px) {
