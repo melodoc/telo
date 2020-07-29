@@ -8,7 +8,6 @@ const validation = () => {
             const template = masked,
                 def = template.replace(/\D/g, ""),
                 val = this.value.replace(/\D/g, "");
-            console.log(template);
             let i = 0,
                 newValue = template.replace(/[_\d]/g, a => (i < val.length ? val.charAt(i++) || def.charAt(i) : a));
             i = newValue.indexOf("_");
